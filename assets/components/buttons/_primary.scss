@@ -1,0 +1,9 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/typography" as *;
+
+.primary-btn {
+  @include btn-style ($secondary-color, $primary-btn-bg, 0);
+  padding: 1.3em 0;
+  width: 100%;
+}

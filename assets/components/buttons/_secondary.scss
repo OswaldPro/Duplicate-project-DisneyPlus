@@ -1,0 +1,12 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/typography" as *;
+
+
+.secondary-btn {
+  @include btn-style ($secondary-color, rgba(0 , 0, 0, 0.8), solid $primary-color 1px, 4px);
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  line-height: 1em;
+  padding: 1.6rem;
+}

@@ -1,0 +1,25 @@
+@use '../abstracts/mixins' as *;
+
+.footer-col {
+  @include d-flex (column,center, center, 14px);
+  width: 88%;
+  margin: auto;
+
+  nav {
+    ul {
+      @include d-flex (row, center, center, 25px);
+      flex-wrap: wrap;
+      text-transform: capitalize;
+      li{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  p:nth-child(3) {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+  .copyr {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,302 @@
+* {
+  color: #C0C0C0;
+  font-family: "AvenirBook", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 4.3rem;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+h3 {
+  color: #f9f9f9;
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 2.7rem;
+  line-height: 3.8rem;
+}
+
+.ads {
+  color: #f9f9f9;
+  font-family: "AvenirBook", sans-serif;
+  font-size: 1.6rem;
+}
+
+.switch {
+  color: #f9f9f9;
+  background-color: #2b2d37;
+  padding: 1.6rem 2rem 1.6rem 0.5rem;
+  border-radius: 25px;
+  margin: 2.4rem 0;
+}
+.switch span {
+  color: #f9f9f9;
+  background-color: #0063e5;
+  padding: 1rem;
+  margin-right: 1.6rem;
+  border-radius: 19px;
+}
+
+.container-fluid {
+  width: 100vw;
+}
+
+.container {
+  margin: auto;
+  margin-bottom: 15rem;
+  width: 88.75%;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+header .container-fluid {
+  width: 100%;
+}
+header .container-fluid .header-btn {
+  width: 95%;
+  height: 160px;
+  text-align: right;
+  margin: 4.4rem 4.4rem 0;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 88%;
+  margin: auto;
+}
+.footer-col nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+}
+.footer-col nav ul li {
+  font-size: 1.2rem;
+}
+.footer-col p:nth-child(3) {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+.footer-col .copyr {
+  font-size: 1.2rem;
+}
+
+.primary-btn {
+  color: #f9f9f9;
+  background-color: #0063e5;
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.3em 0;
+  width: 100%;
+}
+
+.secondary-btn {
+  color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid #C0C0C0 1px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "AvenirBook", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1em;
+  padding: 1.6rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #040714;
+}
+
+.hero {
+  position: relative;
+  top: 0;
+  width: 100vw;
+}
+.hero .bg-img {
+  background-image: url(/assets/images/pictures/background.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 675px;
+}
+.hero .bg-img .hero-content {
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hero .bg-img .hero-content .bundle-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 3rem;
+}
+.hero .bg-img .hero-content .bundle-col .bundle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.hero .bg-img .hero-content .bundle-col .bundle img {
+  width: 100%;
+}
+.hero .bg-img .hero-content .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 765px) {
+  .mobile-d-none {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 764px) {
+  .d-none {
+    display: none;
+  }
+  .bundle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
+.movies .container .tabs ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 2.4rem auto;
+}
+.movies .container .tabs ul li {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+.movies .container .tabs ul li:first-child {
+  border-bottom: solid #fff 5px;
+}
+.movies .container .grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.movies .container .grid img {
+  width: 31.5%;
+}
+
+.bundles .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.bundles .container p:nth-child(2) {
+  font-size: 2rem;
+}
+.bundles .container .bundle-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.bundles .container .bundle-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  width: 29.7%;
+  min-height: 525px;
+  border: solid 1px #C0C0C0;
+  padding: 4rem 4.5rem;
+}
+.bundles .container .bundle-cards .card img {
+  width: 100%;
+}
+.bundles .container .bundle-cards .card .top-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+.bundles .container .bundle-cards .card .bottom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+.bundles .container .bundle-cards .card .bottom-card .price {
+  color: #fff;
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 2.8rem;
+}
+.bundles .container p:nth-child(5) {
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+}
+.bundles .container p:last-child {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  letter-spacing: 0.2px;
+}
+
+/*# sourceMappingURL=styles.css.map */

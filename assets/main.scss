@@ -1,0 +1,190 @@
+// 1️⃣ Import des variables et mixins
+@use "abstracts/variables" as *;
+@use "abstracts/mixins"as *;
+@use "abstracts/functions"as *;
+@use "abstracts/placeholders"as *;
+@use "abstracts/typography"as *;
+
+// 2️⃣ Import des bases
+@use "base/reset"as *;
+@use "base/reset-typo"as *;
+@use "base/global"as *;
+
+// 3️⃣ Import des layouts
+@use "layout/header"as *;
+@use "layout/footer"as *;
+@use "layout/grid"as *;
+@use "layout/forms"as *;
+
+// 4️⃣ Import des composants
+@use "components/buttons/primary"as *;
+@use "components/buttons/secondary"as *;
+@use "components/cards/product-card"as *;
+@use "components/modals/modal"as *;
+
+// 5️⃣ Import des pages spécifiques
+@use "pages/home" as *;
+@use "pages/about"as *;
+@use "pages/contact"as *;
+
+// 6️⃣ Import des thèmes
+@use "themes/light"as *;
+@use "themes/dark"as *;
+
+// 7️⃣ Import des utilitaires
+@use "utils/animations"as *;
+@use "utils/spacing"as *;
+@use "utils/accessibility"as *;
+
+html {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+.hero {
+  position: relative;
+  top: 0;
+  width: 100vw;
+
+  .bg-img {
+    background-image: url(/assets/images/pictures/background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 675px;
+
+    .hero-content {
+      position: relative;
+      top:150px;
+      @include d-flex (column, center, center, 30px);
+
+      .bundle-col {
+        @include d-flex (row, center, center, 24px);
+        margin-bottom: 3rem;
+
+        .bundle {
+          @include d-flex (column, center, center, 28px);
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .hero-text{
+        @include d-flex (column, center, center, 30px);
+      }
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  .mobile-d-none {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+
+  
+}
+
+@media (max-width: 764px) {
+  .d-none {
+    display: none;
+  }
+
+// hero
+
+  .bundle {
+    @include d-flex (column, center, center, 24px)
+  }
+//movies
+}
+
+.movies {
+  .container {
+    .tabs {
+      ul{ 
+        @include d-flex(row, center, center, 28px);
+        margin: 2.4rem auto;
+
+        li {
+          text-transform: uppercase;
+          font-size: 2rem;
+          line-height: 1.5em;
+        }
+        li:first-child {
+            border-bottom: solid #fff 5px;
+        }
+      }
+    }
+    .grid {
+      @include d-flex (row, center, center, 20px);
+      flex-wrap: wrap;
+      img {
+        width: 31.5%;
+      }
+    }
+  }
+}
+
+.bundles {
+  .container {
+    @include d-flex (column, center, center, 10px);
+
+    p:nth-child(2) {
+      font-size: 2rem;
+    }
+    .bundle-cards{
+      @include d-flex(row, center, center, 24px);
+      width: 100%;
+
+      .card {
+        @include d-flex (column, space-between, flex-start, 0);
+        width: 29.7%;
+        min-height: 525px;
+        border: solid 1px $primary-color;
+        padding: 4rem 4.5rem;
+
+        img {
+          width: 100%;
+        }
+
+        .top-card {
+          @include d-flex (column, space-between, flex-start, 15px);
+          width: 100%;
+        }
+        .bottom-card {
+          @include d-flex (column, space-between, flex-start, 15px);
+          width: 100%;
+          .price {
+            color: #fff;
+            font-family: $font-secondary;
+            font-size: 2.8rem;
+          }
+        }
+      }
+    }
+    p:nth-child(5) {
+      font-size: 1.2rem;
+      letter-spacing: 0.2px;
+    }
+    p:last-child{
+      font-size: 1.2rem;
+      color:$secondary-color;
+      letter-spacing: 0.2px;
+    }
+  }
+}
+

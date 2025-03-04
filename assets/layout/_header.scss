@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .container-fluid {
+    width: 100%;
+
+    .header-btn {
+      width: 95%;
+      height: 160px;
+      text-align: right;
+      margin: 4.4rem 4.4rem 0;
+    }
+  }
+}
