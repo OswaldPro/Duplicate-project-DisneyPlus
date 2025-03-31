@@ -17,7 +17,7 @@ Ce projet consiste en une réplique visuelle du site Disney+, permettant d'explo
 ## Installation
 1. Clonez ce dépôt ou téléchargez les fichiers :
    ```sh
-   git clone https://github.com/votre-utilisateur/disneyplus-clone.git
+   git clone https://github.com/OswaldPro/Duplicate-project-DisneyPlus.git
    ```
 2. Ouvrez le fichier `index.html` dans votre navigateur.
 
